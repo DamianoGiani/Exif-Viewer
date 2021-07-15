@@ -5,5 +5,5 @@ In questo progetto è stato implementato un EXIF Viewer. Sono state implementate
 Il progetto è stato scritto in python e come Gui Framework è stato utilizzato PyQt5.
 Per eseguire il programma, scaricare i file ed eseguire il file python chiamato "Controller.py".
 Per l'esecuzione è necessaria l'installazione dei pacchetti:
-PyQt5 https://pypi.org/project/PyQt5/.
+PyQt5 https://pypi.org/project/PyQt5/ ed 
 exifread https://pypi.org/project/ExifRead/.
