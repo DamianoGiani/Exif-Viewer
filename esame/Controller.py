@@ -1,9 +1,9 @@
 import sys
-from esame.exif import Ui_ExifReader
-from esame.AboutExif import Ui_AboutExif
+from exif import Ui_ExifReader
+from AboutExif import Ui_AboutExif
 from PyQt5.QtWidgets import QApplication, QDialog, QFileDialog, QTableWidgetItem, QMainWindow, QAbstractItemView
 from PyQt5.QtCore import Qt, QDir
-from esame.Model import M
+from Model import M
 
 
 class AboutDialog(QDialog):
@@ -43,7 +43,7 @@ class AppDemo(QMainWindow):
         self.ui.aprimappa.clicked.connect(lambda: self._model.gotomap())
         self.setAcceptDrops(True)
 
-    # ########funzioni per poter trascirenare jpeg
+    # ########funzioni per poter trascinare jpeg
 
     def dragEnterEvent(self, event):
         if event.mimeData().hasImage:
@@ -59,7 +59,7 @@ class AppDemo(QMainWindow):
 
     def dropEvent(self, event):
         if event.mimeData().hasImage:
-            event.setDropAction(Qt.CopyAction)  # #####setta l'azione in una copia della cosa draggata
+            event.setDropAction(Qt.CopyAction)  
             file_path = event.mimeData().urls()[0].toLocalFile()
             if file_path.lower().endswith(('.jpg', '.jpeg')):  # controlla che sia droppato un jpeg
                 self._model.update_filepath(file_path)
