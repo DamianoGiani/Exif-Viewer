@@ -1,4 +1,4 @@
-# HCI
+# EXIF Viewer
 Progetto per l'esame di Human Computer Interaction
 
 In questo progetto è stato implementato un EXIF Viewer. Sono state implementate anche le funzionalità aggiuntive richieste, ovvero la Geolocalizzazione di dove è stata scattata la foto(nel caso sia presente il tag GPS) e la possibilità di caricare più immagini e scorrere fra esse(cliccando in alto a sinistra su "File" e "Load Multiple Images").
